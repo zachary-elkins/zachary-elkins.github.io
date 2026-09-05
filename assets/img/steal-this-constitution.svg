@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Steal This Constitution</title>
+  <desc id="desc">Graphic for the book project Steal This Constitution by Zachary Elkins.</desc>
+  <rect width="1200" height="675" fill="#e9e4da"/>
+  <g transform="rotate(-2 600 337)">
+    <rect x="92" y="66" width="1016" height="543" fill="#171717"/>
+    <rect x="126" y="101" width="948" height="475" fill="#d8cbb5"/>
+    <text x="172" y="245" fill="#171717" font-family="Arial,sans-serif" font-size="96" font-weight="900">STEAL THIS</text>
+    <rect x="155" y="273" width="865" height="126" fill="#b12c32"/>
+    <text x="172" y="369" fill="#fff" font-family="Arial,sans-serif" font-size="86" font-weight="900">CONSTITUTION</text>
+    <text x="174" y="465" fill="#333" font-family="Georgia,serif" font-size="31">THE DRIFT AND MASTERY OF</text>
+    <text x="174" y="509" fill="#333" font-family="Georgia,serif" font-size="31">CONSTITUTIONAL DESIGN</text>
+    <text x="800" y="548" fill="#171717" font-family="Arial,sans-serif" font-size="27" letter-spacing="2">ZACHARY ELKINS</text>
+  </g>
+</svg>
