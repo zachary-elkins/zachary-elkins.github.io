@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Terms and Conditions</title>
+  <desc id="desc">Graphic for the book Terms and Conditions by Tom Ginsburg and Zachary Elkins.</desc>
+  <rect width="1200" height="675" fill="#f1eee7"/>
+  <rect x="82" y="70" width="1036" height="535" rx="8" fill="#153b4e"/>
+  <path d="M82 492h1036v113H82z" fill="#bc4a3c"/>
+  <text x="135" y="230" fill="#fff" font-family="Georgia,serif" font-size="92" font-weight="700">TERMS AND</text>
+  <text x="135" y="330" fill="#fff" font-family="Georgia,serif" font-size="92" font-weight="700">CONDITIONS</text>
+  <text x="139" y="404" fill="#dce7ea" font-family="Arial,sans-serif" font-size="32" letter-spacing="3">HOW TO MAKE PRESIDENTIAL LIMITS STICK</text>
+  <text x="139" y="559" fill="#fff" font-family="Arial,sans-serif" font-size="31" letter-spacing="2">TOM GINSBURG · ZACHARY ELKINS</text>
+</svg>

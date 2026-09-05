@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Working with Concepts</title>
+  <desc id="desc">Graphic for Working with Concepts, edited by Zachary Elkins.</desc>
+  <rect width="1200" height="675" fill="#f4f0e7"/>
+  <rect x="72" y="68" width="1056" height="539" rx="8" fill="#fbfaf6" stroke="#181818" stroke-width="5"/>
+  <text x="122" y="205" fill="#171717" font-family="Arial,sans-serif" font-size="46" font-weight="600" letter-spacing="4">WORKING WITH</text>
+  <text x="116" y="345" fill="#b51f2e" font-family="Arial,sans-serif" font-size="118" font-weight="800" letter-spacing="2">CONCEPTS</text>
+  <path d="M138 411c72-52 142-48 210 10 67-70 140-71 219-3 69-61 142-61 219 1 66-51 137-51 218 3" fill="none" stroke="#171717" stroke-width="9"/>
+  <text x="122" y="522" fill="#171717" font-family="Georgia,serif" font-size="29">FOUNDATIONAL ESSAYS BY DAVID COLLIER</text>
+  <text x="122" y="566" fill="#555" font-family="Arial,sans-serif" font-size="25">EDITED BY ZACHARY ELKINS</text>
+</svg>
