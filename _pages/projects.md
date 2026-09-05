@@ -9,6 +9,41 @@ display_categories: [research]
 horizontal: false
 ---
 
+<style>
+  .projects .card figure {
+    height: 190px;
+    margin: 0;
+    overflow: hidden;
+    background: var(--global-bg-color);
+  }
+
+  .projects .card figure picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects .card .card-img-top {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .projects .card-body {
+    padding: 1rem 1.1rem 1.15rem;
+  }
+
+  .projects .card-title {
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  .projects .card-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+</style>
+
 <div class="projects">
 {% assign research_projects = site.projects | where: "category", "research" | sort: "importance" %}
 <div class="row row-cols-1 row-cols-md-2">
