@@ -23,6 +23,13 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .post article > .clearfix::after {
+    clear: none !important;
+    display: none !important;
+  }
+</style>
+
 I study the design, endurance, and consequences of national constitutions. My current work focuses on executive term limits, political exit, constitutional reform, and the diffusion of institutional ideas.
 
 I am co-director of the [Comparative Constitutions Project](https://comparativeconstitutionsproject.org) and [Constitute](https://www.constituteproject.org), and co-director of the Center for Law and Democracy at the University of Texas at Austin.
