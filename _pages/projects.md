@@ -5,16 +5,15 @@ permalink: /projects/
 description: Current books, datasets, and digital projects.
 nav: true
 nav_order: 3
+display_categories: [research]
+horizontal: false
 ---
 
-### Executive Term Limits
-
-A book project on why leaders leave office, why some refuse, and how institutions can make political exit possible.
-
-### [Comparative Constitutions Project](https://comparativeconstitutionsproject.org)
-
-Systematic data on the formal characteristics of national constitutions since 1789.
-
-### [Constitute](https://www.constituteproject.org)
-
-A platform for reading, searching, and comparing the world's constitutions.
+<div class="projects">
+{% assign research_projects = site.projects | where: "category", "research" | sort: "importance" %}
+<div class="row row-cols-1 row-cols-md-2">
+{% for project in research_projects %}
+  {% include projects.liquid %}
+{% endfor %}
+</div>
+</div>
