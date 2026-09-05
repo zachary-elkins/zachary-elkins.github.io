@@ -4,14 +4,6 @@
 cv_pdf: https://drive.google.com/file/d/1e8KtzqXslBYR6lzrOy0dJKkVspmlPoV5/view
 email: zelkins@austin.utexas.edu
 scholar_userid: mhIGFq8AAAAJ
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: https://drive.google.com/file/d/1e8KtzqXslBYR6lzrOy0dJKkVspmlPoV5/view
-email: zelkins@austin.utexas.edu
-scholar_userid: mhIGFq8AAAAJ
 instagram_id: zachary.elkins
 linkedin_username: zachary-elkins-10aa2610
 x_username: ZedTex
