@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Professor of Government, [The University of Texas at Austin](https://www.utexas.edu/)
+subtitle: 'Professor of Government, <a href="https://www.utexas.edu/">The University of Texas at Austin</a>'
 
 profile:
   align: right
