@@ -11,7 +11,7 @@ horizontal: false
 
 <style>
   .projects .card figure {
-    height: 190px;
+    height: 135px;
     margin: 0;
     overflow: hidden;
     background: var(--global-bg-color);
@@ -30,23 +30,29 @@ horizontal: false
   }
 
   .projects .card-body {
-    padding: 1rem 1.1rem 1.15rem;
+    padding: 0.75rem 0.85rem 0.85rem;
   }
 
   .projects .card-title {
-    font-size: 1.25rem;
-    line-height: 1.25;
+    margin-bottom: 0.35rem;
+    font-size: 1.05rem;
+    line-height: 1.2;
   }
 
   .projects .card-text {
-    font-size: 0.95rem;
-    line-height: 1.45;
+    display: -webkit-box;
+    margin-bottom: 0;
+    overflow: hidden;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 </style>
 
 <div class="projects">
 {% assign research_projects = site.projects | where: "category", "research" | sort: "importance" %}
-<div class="row row-cols-1 row-cols-md-2">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
 {% for project in research_projects %}
   {% include projects.liquid %}
 {% endfor %}
