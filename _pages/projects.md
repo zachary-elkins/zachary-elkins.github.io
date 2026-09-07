@@ -48,6 +48,25 @@ horizontal: false
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
+
+  .projects > .row > .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  @media (max-width: 991.98px) {
+    .projects > .row > .col {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .projects > .row > .col {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
 </style>
 
 <div class="projects">
