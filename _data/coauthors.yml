@@ -1,34 +1,84 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
-
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
-
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
-
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"amick":
+  - firstname: ["Joe", "Joseph"]
+    url: https://urbanlabs.uchicago.edu/people/joe-amick
+"baugher":
+  - firstname: ["Jessie"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Jessie+Baugher
+"blount":
+  - firstname: ["Justin"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Justin+Blount+political+science
+"buthe":
+  - firstname: ["Tim", "Timothy"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Tim+Buthe
+"chapman":
+  - firstname: ["Terrence"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Terrence+Chapman
+"cheibub":
+  - firstname: ["Jose Antonio", "José Antonio", "Jose"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Jose+Antonio+Cheibub
+"chernykh":
+  - firstname: ["Svitlana"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Svitlana+Chernykh
+"chilton":
+  - firstname: ["Adam"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Adam+Chilton
+"cozza":
+  - firstname: ["Joseph", "Joe"]
+    url: https://www.josephfcozza.com/
+"cruz":
+  - firstname: ["Andres", "Andrés"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Andres+Cruz+political+science
+"de figueiredo":
+  - firstname: ["Rui"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Rui+de+Figueiredo
+"gardner":
+  - firstname: ["Roy"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Roy+Gardner+political+science
+"ginsburg":
+  - firstname: ["Tom", "Thomas"]
+    url: https://www.law.uchicago.edu/faculty/ginsburg-t
+"guzman":
+  - firstname: ["Andrew"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Andrew+Guzman+law
+"hudson":
+  - firstname: ["Alex", "Alexander"]
+    url: https://www.idea.int/about-us/people/alexander-hudson
+"jacobs":
+  - firstname: ["Alan"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Alan+Jacobs+political+science
+"leetaru":
+  - firstname: ["Kalev"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Kalev+Leetaru
+"martin":
+  - firstname: ["Matt", "Matthew"]
+    url: https://mattjmartin.com/
+"melton":
+  - firstname: ["James"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=James+Melton+constitutions
+"miranker":
+  - firstname: ["Daniel P.", "Daniel"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Daniel+Miranker
+"moran":
+  - firstname: ["Ashley"]
+    url: https://liberalarts.utexas.edu/government/faculty/am49396
+"sequeda":
+  - firstname: ["Juan F.", "Juan"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Juan+F+Sequeda
+"shaffer":
+  - firstname: ["Robert"]
+    url: https://perryworldhouse.upenn.edu/fellows-and-affiliates/robert-shaffer/
+"sides":
+  - firstname: ["John"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=John+Sides+political+science
+"simmons":
+  - firstname: ["Beth"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Beth+Simmons
+"spitzer":
+  - firstname: ["Scott"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Scott+Spitzer+political+science
+"tallberg":
+  - firstname: ["Jonas"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Jonas+Tallberg
+"versteeg":
+  - firstname: ["Mila"]
+    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Mila+Versteeg
