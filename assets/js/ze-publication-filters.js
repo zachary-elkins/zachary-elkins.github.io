@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+function initializePublicationFilters(){
   const state={topic:'all',type:'all'};
   const entries=[...document.querySelectorAll('.ze-publication')];
   const empty=document.querySelector('.ze-no-results');
@@ -21,4 +21,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     const group=button.closest('[data-filter]'); state[group.dataset.filter]=button.dataset.value;
     group.querySelectorAll('button').forEach(item=>item.classList.toggle('active',item===button)); update();
   }));
-});
+}
+
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',initializePublicationFilters,{once:true});
+}else{
+  initializePublicationFilters();
+}
