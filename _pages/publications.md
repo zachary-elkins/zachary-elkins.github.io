@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/publication-filters.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/ze-publications.css' | relative_url }}">
 
 <div class="ze-filters" aria-label="Publication filters">
   <div class="ze-filter-row">
@@ -44,4 +44,4 @@ nav_order: 2
 </div>
 
 <p class="ze-no-results" hidden>No publications match those filters.</p>
-<script src="{{ '/assets/js/publication-filters.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/ze-publication-filters.js' | relative_url }}"></script>
