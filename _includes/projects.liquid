@@ -1,0 +1,31 @@
+<div class="col">
+  {% assign project_type = project.project_type %}
+  {% unless project_type %}
+    {% case project.title %}
+      {% when "Comparative Constitutions Project" %}{% assign project_type = "Data Project" %}
+      {% when "Constitute" %}{% assign project_type = "Digital Project" %}
+      {% when "Linnaeus" %}{% assign project_type = "Software" %}
+      {% when "Center for Law and Democracy" %}{% assign project_type = "Research Center" %}
+      {% when "Embedded Scholars Program" %}{% assign project_type = "Program" %}
+      {% when "Concept Integration in Comparative Law" %}{% assign project_type = "Research Project" %}
+      {% when "Comparative Constitutional Law and Policy" %}{% assign project_type = "Book Series" %}
+      {% when "Terms and Conditions" %}{% assign project_type = "Book" %}
+      {% when "Working with Concepts" %}{% assign project_type = "Book" %}
+      {% when "Steal This Constitution" %}{% assign project_type = "Book Project" %}
+    {% endcase %}
+  {% endunless %}
+  {% if project.redirect %}<a href="{{ project.redirect }}">{% else %}<a href="{{ project.url | relative_url }}">{% endif %}
+    <div class="card h-100 hoverable">
+      <div class="project-media{% unless project.img %} project-media-placeholder{% endunless %}">
+        {% if project.img %}
+          {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 992px) 30vw, (min-width: 576px) 45vw, 95vw" alt=project.title class="card-img-top" %}
+        {% endif %}
+        {% if project_type %}<span class="project-type">{{ project_type }}</span>{% endif %}
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+      </div>
+    </div>
+  </a>
+</div>
