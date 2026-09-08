@@ -21,6 +21,13 @@ function initializePublicationFilters(){
     const group=button.closest('[data-filter]'); state[group.dataset.filter]=button.dataset.value;
     group.querySelectorAll('button').forEach(item=>item.classList.toggle('active',item===button)); update();
   }));
+  document.querySelectorAll('.ze-entry-topic').forEach(button=>button.addEventListener('click',()=>{
+    state.topic=button.dataset.topic;
+    const group=document.querySelector('[data-filter="topic"]');
+    group.querySelectorAll('button').forEach(item=>item.classList.toggle('active',item.dataset.value===state.topic));
+    update();
+    group.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }));
 }
 
 if(document.readyState==='loading'){
