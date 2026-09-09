@@ -1,7 +1,7 @@
 ---
 ---
 <div class="row ze-publication" data-category="{{ entry.category | downcase | escape }}" data-keywords="{{ entry.keywords | downcase | escape }}">
-  {% if site.enable_publication_thumbnails %}
+  {% if false %}
     <div class="col-12 col-sm-2 ze-pub-rail">
       <div class="ze-pub-year">{{ entry.year }}</div>
       {% assign entry_topics = entry.keywords | split: ',' %}
@@ -84,7 +84,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="col-12">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -217,13 +217,35 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entrymonth != "" %}, {% endif %}{{ entrymonth }}{% endcapture %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entrymonth != "" %}, {% endif %}{{ entrymonth }}{% if entryyear != "" %}{% if entrytype_text != "" or entrymonth != "" %}, {% endif %}<span class="ze-entry-year">{{ entryyear | strip }}</span>{% endif %}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
+    {% if entry.keywords %}
+      {% assign entry_topics = entry.keywords | split: ',' %}
+      <div class="ze-entry-topics" aria-label="Topics">
+        {% for topic in entry_topics %}
+          {% assign topic_slug = topic | strip %}
+          <button type="button" class="ze-entry-topic" data-topic="{{ topic_slug }}">
+            {% case topic_slug %}
+              {% when 'constitutional-design' %}constitutional design
+              {% when 'democracy' %}democracy &amp; citizenship
+              {% when 'executive-power' %}executive power
+              {% when 'diffusion' %}diffusion
+              {% when 'human-rights' %}rights &amp; identity
+              {% when 'data-methods' %}concepts &amp; methods
+              {% when 'international-politics' %}international politics
+              {% when 'latin-america' %}Latin America
+              {% else %}{{ topic_slug | replace: '-', ' ' }}
+            {% endcase %}
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
