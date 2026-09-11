@@ -10,7 +10,7 @@ nav_order: 7
 ## PhD students
 
 <div class="people-list" markdown="1">
-- [Giorleny Altamirano](https://www.heinz.cmu.edu/faculty-research/profiles/gioaltamirano-rayo/)
+- [Giorleny Altamirano](https://www.heinz.cmu.edu/faculty-research/profiles/rayo-gioaltamirano/)
 - [Huseyin Alptekin](https://orsam.org.tr/en/author/huseyin-alptekin/)
 - [Joe Amick](https://urbanlabs.uchicago.edu/people/joe-amick)†
 - [Maria Paz Avila](https://repositories.lib.utexas.edu/items/1c5acbd2-9fbd-4bf6-b51f-0d88f5be44a3)
@@ -31,7 +31,7 @@ nav_order: 7
 - [Siyun Jiang](https://siyunjiang.github.io/)
 - Stephen Joyce
 - [Jonathan Kinkel](https://search.asu.edu/profile/3192150)
-- [Riitta-Ilona Koivumaeki](https://cipr.tulane.edu/person/riitta-ilona-koivumaecki/)
+- Riitta-Ilona Koivumaeki
 - Byung-Jae Lee
 - [Ryan Lloyd](https://research.google/people/108421/)
 - [Tofigh Maboudi](https://scholars.luc.edu/en/persons/tofigh-maboudi/)
@@ -42,10 +42,10 @@ nav_order: 7
 - Rodrigo Nunes
 - Guillermo Perez
 - [Mathew Rhodes-Purdy](https://scholar.google.com/citations?user=HPxI89gAAAAJ)
-- [Ilana Rothkopf](https://klau.nd.edu/academics/student-affiliates/ilana-rothkopf/)
+- Ilana Rothkopf
 - Gustavo Rivera
 - [Kyle Shen](https://scholar.google.com/citations?user=Dl08AgQAAAAJ)
-- [Robert Shaffer](https://perryworldhouse.upenn.edu/fellows-and-affiliates/robert-shaffer/)†
+- [Robert Shaffer](https://www.maxwell.syr.edu/research/center-for-policy-research/people/robert-shaffer)†
 - Rachel Sternfeld
 - Kevin Stuart
 - [Diego Vega](https://sites.google.com/view/vegadiego/)
@@ -60,9 +60,9 @@ nav_order: 7
 ## Thesis supervisors
 
 <div class="supervisor-list">
-  <p><strong>PhD</strong> · <a href="https://polisci.berkeley.edu/people/person/david-collier">David Collier</a> (chair), <a href="https://www.law.upenn.edu/faculty/esimmons">Beth Simmons</a>, <a href="https://gspp.berkeley.edu/research-and-impact/faculty/henry-brady">Henry Brady</a>, <a href="https://polisci.berkeley.edu/people/person/ruth-b-collier">Ruth Berins Collier</a>, and <a href="https://sociology.berkeley.edu/faculty/trond-petersen">Trond Petersen</a></p>
+  <p><strong>PhD</strong> · <a href="https://polisci.berkeley.edu/people/person/david-collier">David Collier</a> (chair), <a href="https://www.law.upenn.edu/faculty/simmons3">Beth Simmons</a>, <a href="https://gspp.berkeley.edu/research-and-impact/faculty/henry-brady">Henry Brady</a>, <a href="https://polisci.berkeley.edu/people/person/ruth-b-collier">Ruth Berins Collier</a>, and <a href="https://sociology.berkeley.edu/faculty/trond-petersen">Trond Petersen</a></p>
   <p><strong>MA</strong> · <a href="https://liberalarts.utexas.edu/government/faculty-research/emeritus-faculty/henry-dietz.html">Henry Dietz</a> and <a href="https://cla.utexas.edu/llilas/news/remembering-larry-graham-brazil-center-founder-and-professor-emeritus-of-government">Lawrence Graham</a></p>
-  <p><strong>BA</strong> · <a href="https://archives.news.yale.edu/ybc/v25.n4.obit.html">Maurice Natanson</a></p>
+  <p><strong>BA</strong> · <a href="https://www.nationalbook.org/people/maurice-natanson/">Maurice Natanson</a></p>
 </div>
 
 ## Co-authors
@@ -89,11 +89,11 @@ nav_order: 7
 - [James Melton](https://comparativeconstitutionsproject.org/about-ccp/)
 - [Daniel Miranker](https://en.wikipedia.org/wiki/Daniel_P._Miranker)
 - [Ashley Moran](https://liberalarts.utexas.edu/government/faculty/am49396)
-- [Juan F. Sequeda](https://www.knowledgegraph.tech/speakers/juan-sequeda/)
-- [Robert Shaffer](https://perryworldhouse.upenn.edu/fellows-and-affiliates/robert-shaffer/)
-- [Beth Simmons](https://www.law.upenn.edu/faculty/esimmons)
+- [Juan F. Sequeda](https://juansequeda.com/)
+- [Robert Shaffer](https://www.maxwell.syr.edu/research/center-for-policy-research/people/robert-shaffer)
+- [Beth Simmons](https://www.law.upenn.edu/faculty/simmons3)
 - [John Sides](https://as.vanderbilt.edu/political-science/bio/john-sides/)
-- [Scott Spitzer](https://news.fullerton.edu/press-release/cal-state-fullerton-faculty-member-scott-j-spitzer-available-to-discuss-humanitarian-crisis-of-the-israel-hamas-war/)
+- [Scott Spitzer](https://paj.fullerton.edu/politicalscience/faculty.html)
 - [Jonas Tallberg](https://www.su.se/english/profiles/j/jtall)
 - [Mila Versteeg](https://www.law.virginia.edu/faculty/profile/ev4a/2301734)
 </div>
