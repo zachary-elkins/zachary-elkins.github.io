@@ -35,6 +35,20 @@ nav_order: 2
       <button data-value="software and multimedia">software &amp; multimedia</button>
     </div>
   </div>
+  <div class="ze-filter-row">
+    <span>year</span>
+    <div data-filter="year">
+      <button class="active" data-value="all">all</button>
+      <button data-value="2020">2020s</button>
+      <button data-value="2010">2010s</button>
+      <button data-value="2000">2000s</button>
+      <button data-value="in-progress">in progress</button>
+    </div>
+  </div>
+  <div class="ze-filter-status" aria-live="polite">
+    <span><strong data-result-count>0</strong> publications</span>
+    <button type="button" class="ze-reset-filters">clear filters</button>
+  </div>
 </div>
 
 {% include bib_search.liquid %}
