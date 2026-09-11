@@ -29,6 +29,14 @@ latest_posts:
     clear: none !important;
     display: none !important;
   }
+
+  .post .news table td:first-child {
+    padding-left: 0;
+  }
+
+  .post .news table td:last-child {
+    padding-right: 0;
+  }
 </style>
 
 I study how political institutions are designed, how they endure, and how they shape political behavior. Much of my work centers on national constitutions and constitutional change, with a particular interest in Latin America. My current projects examine executive term limits, political exit, democratic reform, and the diffusion of institutional ideas.
