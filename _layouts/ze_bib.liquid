@@ -1,6 +1,11 @@
 ---
 ---
-<div class="row ze-publication" data-category="{{ entry.category | downcase | escape }}" data-keywords="{{ entry.keywords | downcase | escape }}">
+<div
+  class="row ze-publication"
+  data-category="{{ entry.category | downcase | escape }}"
+  data-keywords="{{ entry.keywords | downcase | escape }}"
+  data-year="{{ entry.year | downcase | escape }}"
+>
   {% if false %}
     <div class="col-12 col-sm-2 ze-pub-rail">
       <div class="ze-pub-year">{{ entry.year }}</div>
