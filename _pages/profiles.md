@@ -62,7 +62,7 @@ nav_order: 7
 <div class="supervisor-list">
   <p><strong>PhD</strong> · <a href="https://polisci.berkeley.edu/people/person/david-collier">David Collier</a> (chair), <a href="https://www.law.upenn.edu/faculty/simmons3">Beth Simmons</a>, <a href="https://gspp.berkeley.edu/research-and-impact/faculty/henry-brady">Henry Brady</a>, <a href="https://polisci.berkeley.edu/people/person/ruth-b-collier">Ruth Berins Collier</a>, and <a href="https://sociology.berkeley.edu/faculty/trond-petersen">Trond Petersen</a></p>
   <p><strong>MA</strong> · <a href="https://liberalarts.utexas.edu/government/faculty-research/emeritus-faculty/henry-dietz.html">Henry Dietz</a> and <a href="https://cla.utexas.edu/llilas/news/remembering-larry-graham-brazil-center-founder-and-professor-emeritus-of-government">Lawrence Graham</a></p>
-  <p><strong>BA</strong> · <a href="https://www.nationalbook.org/people/maurice-natanson/">Maurice Natanson</a></p>
+  <p><strong>BA</strong> · <a href="https://en.wikipedia.org/wiki/Maurice_Natanson">Maurice Natanson</a></p>
 </div>
 
 ## Co-authors
