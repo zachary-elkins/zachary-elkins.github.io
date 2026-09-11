@@ -6,8 +6,7 @@ title: blank
 first_name: Zachary
 middle_name:
 last_name: Elkins
-contact_note: >
-  Department of Government, The University of Texas at Austin
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Zachary Elkins is a political scientist studying constitutions, democracy, and institutional design.
 footer_text: >
@@ -95,7 +94,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
