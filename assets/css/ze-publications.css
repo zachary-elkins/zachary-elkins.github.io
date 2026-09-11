@@ -1,1 +1,136 @@
-.ze-filters{margin:1.1rem 0 1.4rem;padding:.65rem .75rem;border:1px solid var(--global-divider-color);font-size:.9rem}.ze-filter-row{display:grid;grid-template-columns:3.5rem 1fr;gap:.65rem;margin:.25rem 0}.ze-filter-row>span{padding-top:.15rem;color:var(--global-text-color-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em}.ze-filter-row div,.ze-entry-topics{display:flex;flex-wrap:wrap;gap:.25rem}.ze-filter-row button,.ze-entry-topic{border:1px solid var(--global-divider-color);border-radius:.18rem;background:transparent;color:var(--global-text-color-light);cursor:pointer;font:inherit}.ze-filter-row button{padding:.1rem .34rem;font-size:.76rem;line-height:1.35}.ze-filter-row button:hover,.ze-filter-row button.active,.ze-entry-topic:hover{border-color:var(--global-theme-color);background:var(--global-theme-color);color:#fff}.publications .ze-publication{margin-bottom:1.35rem}.ze-entry-topics{margin-top:.28rem}.ze-entry-topic{padding:.06rem .28rem;font-size:.75rem;line-height:1.3}.publications .periodical .ze-entry-year{color:var(--global-text-color);font-weight:500}.ze-no-results{margin-top:2rem;color:var(--global-text-color-light)}.ze-self-author{font-style:normal;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.16em}.publications .title{line-height:1.3}.publications .author,.publications .periodical{line-height:1.4}.publications .links{margin-top:.3rem}@media(max-width:576px){.ze-filter-row{grid-template-columns:1fr}.ze-filter-row>span{padding:0}}
+.ze-filters {
+  margin: 1.1rem 0 1.4rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  font-size: 0.9rem;
+}
+
+.ze-filter-row {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.65rem;
+  margin: 0.25rem 0;
+}
+
+.ze-filter-row > span {
+  padding-top: 0.15rem;
+  color: var(--global-text-color-light);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ze-filter-row div,
+.ze-entry-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.ze-filter-row button,
+.ze-entry-topic,
+.ze-reset-filters {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.18rem;
+  background: transparent;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  font: inherit;
+}
+
+.ze-filter-row button {
+  padding: 0.1rem 0.34rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.ze-filter-row button:hover,
+.ze-filter-row button.active,
+.ze-entry-topic:hover {
+  border-color: var(--global-theme-color);
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+.ze-filter-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.55rem 0 0 4.15rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+}
+
+.ze-reset-filters {
+  padding: 0.08rem 0.35rem;
+}
+
+.ze-reset-filters:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.publications > h2 {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+.publications .ze-publication {
+  margin-bottom: 1.35rem;
+}
+
+.ze-entry-topics {
+  margin-top: 0.28rem;
+}
+
+.ze-entry-topic {
+  padding: 0.06rem 0.28rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.publications .periodical .ze-entry-year {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+.ze-no-results {
+  margin-top: 2rem;
+  color: var(--global-text-color-light);
+}
+
+.ze-self-author {
+  font-style: normal;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.publications .title {
+  line-height: 1.3;
+}
+
+.publications .author,
+.publications .periodical {
+  line-height: 1.4;
+}
+
+.publications .links {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 576px) {
+  .ze-filter-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ze-filter-row > span {
+    padding: 0;
+  }
+
+  .ze-filter-status {
+    margin-left: 0;
+  }
+}
