@@ -9,7 +9,32 @@ nav_order: 2
 
 <link rel="stylesheet" href="{{ '/assets/css/ze-publications.css' | relative_url }}">
 
-<div class="ze-filters" aria-label="Publication filters">
+<section class="ze-featured" aria-labelledby="featured-work">
+  <h2 id="featured-work">Featured work</h2>
+  <div class="ze-featured-grid">
+    <div class="ze-featured-item">
+      <p class="ze-featured-label">Concepts &amp; methods</p>
+      <h3><a href="https://www.cambridge.org/core/books/working-with-concepts/9B3E0F1EA525D9416341AD83D551AD9C">Working with Concepts</a></h3>
+      <p>David Collier’s foundational essays on concept formation and measurement, with new research notes. Open access.</p>
+    </div>
+    <div class="ze-featured-item">
+      <p class="ze-featured-label">Constitutional design</p>
+      <h3><a href="https://www.cambridge.org/core/books/endurance-of-national-constitutions/CD671879ADBFF7420C25C3707E6135F0">The Endurance of National Constitutions</a></h3>
+      <p>Why some constitutions last longer than others. With Tom Ginsburg and James Melton.</p>
+    </div>
+    <div class="ze-featured-item">
+      <p class="ze-featured-label">Executive power</p>
+      <h3><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8216587/">Term-Limit Evasions and the Non-Compliance Cycle</a></h3>
+      <p>How leaders evade presidential term limits and how those evasions shape future compliance. Open access.</p>
+    </div>
+  </div>
+</section>
+
+<h2 id="full-bibliography">Full bibliography</h2>
+
+<div class="ze-filters" role="group" aria-label="Publication filters">
+  <label class="ze-search-label" for="ze-publication-search">Search publications</label>
+  <input type="search" id="ze-publication-search" placeholder="Title, author, venue, or keyword">
   <div class="ze-filter-row">
     <span>topic</span>
     <div data-filter="topic">
@@ -36,7 +61,7 @@ nav_order: 2
     </div>
   </div>
   <div class="ze-filter-row">
-    <span>year</span>
+    <span>date</span>
     <div data-filter="year">
       <button class="active" data-value="all">all</button>
       <button data-value="2020">2020s</button>
@@ -46,12 +71,10 @@ nav_order: 2
     </div>
   </div>
   <div class="ze-filter-status" aria-live="polite">
-    <span><strong data-result-count>0</strong> publications</span>
+    <span data-result-count></span>
     <button type="button" class="ze-reset-filters">clear filters</button>
   </div>
 </div>
-
-{% include bib_search.liquid %}
 
 <div class="publications">
 {% bibliography %}

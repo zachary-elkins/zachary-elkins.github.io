@@ -1,85 +1,94 @@
 function initializePublicationFilters() {
-  const state = { topic: 'all', type: 'all', year: 'all' };
   const publications = document.querySelector('.publications');
+  const filters = document.querySelector('.ze-filters');
+  const search = document.querySelector('#ze-publication-search');
   const empty = document.querySelector('.ze-no-results');
   const resultCount = document.querySelector('[data-result-count]');
 
-  if (!publications) return;
+  if (!publications || !filters || !search || !empty || !resultCount) return;
 
-  // Move groups made entirely of working papers to the end so published scholarship leads.
-  [...publications.querySelectorAll('.bibliography')]
-    .filter((list) => {
-      const items = [...list.querySelectorAll('.ze-publication')];
-      return items.length > 0 && items.every((item) => item.dataset.category === 'working papers');
-    })
-    .forEach((list) => {
-      const heading = list.previousElementSibling;
-      if (heading && /^H[1-6]$/.test(heading.tagName)) publications.appendChild(heading);
-      publications.appendChild(list);
-    });
+  const state = { topic: 'all', type: 'all', year: 'all' };
+  const buttons = [...filters.querySelectorAll('[data-filter] button')];
+  const yearOf = (text) => Number(text.match(/(?:19|20)\d{2}/)?.[0]) || 0;
+  const normalize = (text) => text.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/\s+/g, ' ').trim();
+  const groups = [...publications.querySelectorAll(':scope > ol.bibliography')].map((list) => {
+    const heading = list.previousElementSibling;
+    const entries = [...list.querySelectorAll('.ze-publication')].map((entry) => ({
+      entry,
+      category: entry.dataset.category,
+      topics: entry.dataset.keywords.split(',').map((topic) => topic.trim()),
+      year: yearOf(entry.dataset.year),
+      text: normalize(
+        [...entry.querySelectorAll('.title, .author, .periodical, .ze-entry-topics')]
+          .map((part) => part.textContent)
+          .join(' '),
+      ),
+    }));
+    return { list, heading, entries };
+  });
 
-  const entries = [...document.querySelectorAll('.ze-publication')];
+  // Keep the published chronology ahead of forthcoming work and drafts.
+  groups.sort((a, b) => yearOf(b.heading.textContent) - yearOf(a.heading.textContent));
+  groups.forEach(({ heading, list }) => publications.append(heading, list));
 
-  function matchesYear(entry) {
+  function matchesYear(year) {
     if (state.year === 'all') return true;
-    if (state.year === 'in-progress') return entry.dataset.category === 'working papers';
-
-    const year = (entry.dataset.year || '').match(/(?:19|20)\d{2}/);
-    return year && Math.floor(Number(year[0]) / 10) * 10 === Number(state.year);
+    if (state.year === 'in-progress') return year === 0;
+    return Math.floor(year / 10) * 10 === Number(state.year);
   }
 
   function update() {
+    const terms = normalize(search.value).split(' ').filter(Boolean);
     let shown = 0;
 
-    entries.forEach((entry) => {
-      const topic = state.topic === 'all' || (entry.dataset.keywords || '').split(/,\s*/).includes(state.topic);
-      const type = state.type === 'all' || entry.dataset.category === state.type;
-      entry.hidden = !(topic && type && matchesYear(entry));
-      if (!entry.hidden) shown += 1;
+    groups.forEach(({ heading, list, entries }) => {
+      let groupShown = 0;
+      entries.forEach(({ entry, category, topics, year, text }) => {
+        const topicMatches = state.topic === 'all' || topics.includes(state.topic);
+        const typeMatches = state.type === 'all' || category === state.type;
+        const queryMatches = terms.every((term) => text.includes(term));
+        entry.hidden = !(topicMatches && typeMatches && matchesYear(year) && queryMatches);
+        // Hide the bibliography item as well so list semantics match the visible results.
+        entry.closest('li').hidden = entry.hidden;
+        if (!entry.hidden) groupShown += 1;
+      });
+      list.hidden = heading.hidden = groupShown === 0;
+      shown += groupShown;
     });
 
-    document.querySelectorAll('.bibliography').forEach((list) => {
-      const visible = [...list.querySelectorAll('.ze-publication')].some((entry) => !entry.hidden);
-      const heading = list.previousElementSibling;
-      list.hidden = !visible;
-      if (heading && /^H[1-6]$/.test(heading.tagName)) heading.hidden = !visible;
-    });
+    empty.hidden = shown !== 0;
+    resultCount.textContent = `${shown} ${shown === 1 ? 'result' : 'results'}`;
 
-    if (empty) empty.hidden = shown !== 0;
-    if (resultCount) resultCount.textContent = shown;
+    buttons.forEach((button) => {
+      const key = button.closest('[data-filter]').dataset.filter;
+      const active = state[key] === button.dataset.value;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
   }
 
-  document.querySelectorAll('[data-filter] button').forEach((button) =>
+  buttons.forEach((button) =>
     button.addEventListener('click', () => {
-      const group = button.closest('[data-filter]');
-      state[group.dataset.filter] = button.dataset.value;
-      group.querySelectorAll('button').forEach((item) => item.classList.toggle('active', item === button));
+      state[button.closest('[data-filter]').dataset.filter] = button.dataset.value;
       update();
     }),
   );
 
-  document.querySelectorAll('.ze-entry-topic').forEach((button) =>
+  publications.querySelectorAll('.ze-entry-topic').forEach((button) =>
     button.addEventListener('click', () => {
       state.topic = button.dataset.topic;
-      state.type = 'all';
-      state.year = 'all';
-
-      document.querySelectorAll('[data-filter] button').forEach((item) => {
-        const group = item.closest('[data-filter]');
-        const value = group.dataset.filter === 'topic' ? state.topic : 'all';
-        item.classList.toggle('active', item.dataset.value === value);
-      });
-
       update();
-      document.querySelector('[data-filter="topic"]')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      const activeTopic = buttons.find(
+        (filter) => filter.closest('[data-filter]').dataset.filter === 'topic' && filter.dataset.value === state.topic,
+      );
+      activeTopic?.focus();
     }),
   );
 
-  document.querySelector('.ze-reset-filters')?.addEventListener('click', () => {
-    Object.keys(state).forEach((key) => {
-      state[key] = 'all';
-    });
-    document.querySelectorAll('[data-filter] button').forEach((item) => item.classList.toggle('active', item.dataset.value === 'all'));
+  search.addEventListener('input', update);
+  filters.querySelector('.ze-reset-filters').addEventListener('click', () => {
+    Object.assign(state, { topic: 'all', type: 'all', year: 'all' });
+    search.value = '';
     update();
   });
 
