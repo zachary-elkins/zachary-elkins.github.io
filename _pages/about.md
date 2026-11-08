@@ -95,6 +95,10 @@ I am co-director of the [Comparative Constitutions Project](https://comparativec
   <h2 id="home-news-heading">news</h2>
   <div class="home-news-list">
     <div class="home-news-item">
+      <div class="home-news-date">November 2026</div>
+      <div>I joined colleagues in <a href="{{ '/news/ran-hirschl/' | relative_url }}">celebrating the life and work of Ran Hirschl</a>, my friend and longtime co-editor.</div>
+    </div>
+    <div class="home-news-item">
       <div class="home-news-date">August 2026</div>
       <div>Students in the <a href="https://sites.utexas.edu/embeddedscholars/program/">Embedded Scholars Program</a> completed international assignments in Panama, Chile, Kosovo, Armenia, Albania, and North Macedonia. <a href="https://sites.utexas.edu/embeddedscholars/blog/">Read about their experiences</a>.</div>
     </div>
