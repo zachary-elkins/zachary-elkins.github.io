@@ -7,14 +7,14 @@ inline: false
 related_posts: false
 ---
 
-I recently joined colleagues to celebrate the life and work of my friend Ran Hirschl. Ran had a gift for finding the constitutional question in places where others hadn’t thought to look. In *City, State*, for instance, he asked why our constitutions give so little attention to the cities where so many of us live.
+This year many of us have been celebrating the life and work of my friend Ran Hirschl. Ran had a gift for finding the constitutional question in places where others hadn’t thought to look. In *City, State*, for instance, he asked why our constitutions give so little attention to the cities where so many of us live.
 
 <figure>
   <img src="{{ '/assets/img/news/hirschl-series-editors.webp' | relative_url }}" alt="Watercolor illustration of the three series editors in conversation around a seminar table" width="1500" height="844" style="width: 100%; height: auto;">
-  <figcaption>An AI-generated watercolor illustration of the three series editors, Zachary Elkins, Ran Hirschl, and Tom Ginsburg.</figcaption>
+  <figcaption>A watercolor illustration of the three series editors, Zachary Elkins, Ran Hirschl, and Tom Ginsburg.</figcaption>
 </figure>
 
-Tom Ginsburg and I had the pleasure of working with Ran on Cambridge University Press’s *Comparative Constitutional Law and Policy* series. Ran was the driving force among the three of us. He kept us moving and brought an energy to the work that I’ll miss.
+Tom Ginsburg and I had the pleasure of working with Ran on Cambridge University Press’s *Comparative Constitutional Law and Policy* series. Ran was the driving force among the three of us. He kept us moving and brought an energy to the work that I’ll miss. We’re really happy to welcome [Mila Versteeg](https://www.law.virginia.edu/faculty/profile/ev4a/2301734) as a co-editor, as we try to carry on Ran’s legacy.
 
 <figure>
   <a href="{{ '/assets/img/news/cambridge-series-65-books.webp' | relative_url }}" aria-label="Enlarge the montage of 65 books in the Cambridge series">
