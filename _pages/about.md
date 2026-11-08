@@ -108,7 +108,7 @@ I am co-director of the [Comparative Constitutions Project](https://comparativec
     </div>
     <div class="home-news-item">
       <div class="home-news-date">April 2026</div>
-      <div>Now out! <a href="https://www.cambridge.org/core/books/working-with-concepts/9B3E0F1EA525D9416341AD83D551AD9C"><em>Working with Concepts: Foundational Essays by David Collier, with Research Notes on Innovation in the Field</em></a>, edited by Zach Elkins and published by Cambridge University Press. Free and open access.</div>
+      <div>Now out! <em><a href="https://www.cambridge.org/core/books/working-with-concepts/9B3E0F1EA525D9416341AD83D551AD9C">Working with Concepts: Foundational Essays by David Collier, with Research Notes on Innovation in the Field</a></em>, edited by Zach Elkins and published by Cambridge University Press. Free and open access.</div>
     </div>
     <div class="home-news-item">
       <div class="home-news-date">March 2026</div>
