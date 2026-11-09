@@ -13,6 +13,11 @@ nav_order: 2
   <h2 id="featured-work">Featured work</h2>
   <div class="ze-featured-grid">
     <div class="ze-featured-item">
+      <p class="ze-featured-label">Forthcoming</p>
+      <h3><a href="https://thenewpress.org/books/terms-and-conditions/">Terms and Conditions</a></h3>
+      <p>How democracies can make presidential term limits stick. With Tom Ginsburg.</p>
+    </div>
+    <div class="ze-featured-item">
       <p class="ze-featured-label">Concepts &amp; methods</p>
       <h3><a href="https://www.cambridge.org/core/books/working-with-concepts/9B3E0F1EA525D9416341AD83D551AD9C">Working with Concepts</a></h3>
       <p>David Collier’s foundational essays on concept formation and measurement, with new research notes. Open access.</p>
@@ -21,11 +26,6 @@ nav_order: 2
       <p class="ze-featured-label">Constitutional design</p>
       <h3><a href="https://www.cambridge.org/core/books/endurance-of-national-constitutions/CD671879ADBFF7420C25C3707E6135F0">The Endurance of National Constitutions</a></h3>
       <p>Why some constitutions last longer than others. With Tom Ginsburg and James Melton.</p>
-    </div>
-    <div class="ze-featured-item">
-      <p class="ze-featured-label">Executive power</p>
-      <h3><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8216587/">Term-Limit Evasions and the Non-Compliance Cycle</a></h3>
-      <p>How leaders evade presidential term limits and how those evasions shape future compliance. Open access.</p>
     </div>
   </div>
 </section>
