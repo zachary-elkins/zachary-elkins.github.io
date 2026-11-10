@@ -1,7 +1,8 @@
 ---
 layout: about
-title: about
+title: Zachary Elkins
 permalink: /
+description: Zachary Elkins is Professor of Government at The University of Texas at Austin, studying comparative constitutional design, democracy, and political institutions.
 subtitle: 'Professor of Government, <a href="https://www.utexas.edu/">The University of Texas at Austin</a>'
 
 profile:
@@ -23,6 +24,26 @@ announcements:
 latest_posts:
   enabled: false
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zachary Elkins",
+  "url": "https://zachary-elkins.github.io/",
+  "jobTitle": "Professor of Government",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "The University of Texas at Austin",
+    "url": "https://www.utexas.edu/"
+  },
+  "knowsAbout": ["Comparative constitutional design", "Comparative politics", "Democracy", "Public law", "Political institutions"],
+  "sameAs": [
+    "https://comparativeconstitutionsproject.org/",
+    "https://www.constituteproject.org/"
+  ]
+}
+</script>
 
 <style>
   .post article > .clearfix::after {
