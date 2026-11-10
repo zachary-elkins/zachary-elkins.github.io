@@ -37,11 +37,7 @@ latest_posts:
     "name": "The University of Texas at Austin",
     "url": "https://www.utexas.edu/"
   },
-  "knowsAbout": ["Comparative constitutional design", "Comparative politics", "Democracy", "Public law", "Political institutions"],
-  "sameAs": [
-    "https://comparativeconstitutionsproject.org/",
-    "https://www.constituteproject.org/"
-  ]
+  "knowsAbout": ["Comparative constitutional design", "Comparative politics", "Democracy", "Public law", "Political institutions"]
 }
 </script>
 
